@@ -64,3 +64,23 @@ n = int(sys.stdin.readline())
 a = [sys.stdin.readline().strip() for i in range(n)]
 ```
 - strip() : 문자열 맨 앞과 맨 끝 공백을 제거한다.
+
+<br>
+
+5. 숫자 n줄을 입력받아 리스트에 저장하기
+```py
+import sys
+
+n = int(sys.stdin.readline())
+a = [int(sys.stdin.readline().strip()) for i in range(n)]
+```
+
+<br>
+
+6. 숫자 n줄을 입력받아 2차원 리스트에 저장하기
+```py
+import sys
+
+n = map(int, sys.stdin.readline().split())
+a = [list(map(int, sys.stdin.readline().split())) for r in range(n)]
+```
